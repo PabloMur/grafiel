@@ -265,7 +265,11 @@ main {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: 1.5rem;
-  align-items: start;
+  align-items: stretch;
+}
+
+.two-col > .card-section {
+  height: 100%;
 }
 
 @media (max-width: 680px) {
