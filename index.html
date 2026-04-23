@@ -1,33 +1,109 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Grafiel Imprenta - Servicios de impresión en Mar del Plata.">
+
+  <!-- Primary SEO -->
+  <title>Grafiel Imprenta – Impresión en Mar del Plata | San Martín 3495</title>
+  <meta name="description" content="Imprenta en Mar del Plata. Folletos, tarjetas, volantes, afiches y más. San Martín 3495. Lunes a viernes 8–18 hs, sábados 8–13 hs. Tel: 223-688-2574.">
+  <meta name="keywords" content="imprenta Mar del Plata, impresión digital Mar del Plata, folletos, tarjetas de visita, volantes, afiches, Grafiel">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Grafiel Imprenta">
+  <meta name="theme-color" content="#1c1209">
+  <link rel="canonical" href="https://frann-rossi.github.io/grafiel/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://frann-rossi.github.io/grafiel/">
+  <meta property="og:site_name" content="Grafiel Imprenta">
+  <meta property="og:title" content="Grafiel Imprenta – Impresión en Mar del Plata">
+  <meta property="og:description" content="Imprenta en Mar del Plata. Folletos, tarjetas, volantes, afiches y más. San Martín 3495. Tel: 223-688-2574.">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Grafiel Imprenta – Impresión en Mar del Plata">
+  <meta name="twitter:description" content="Imprenta en Mar del Plata. Folletos, tarjetas, volantes y más. San Martín 3495.">
+
+  <!-- Fonts: preconnect + preload para reducir latencia -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap">
+
+  <!-- Bootstrap Icons: carga diferida (no bloquea render) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"></noscript>
+
   <link rel="stylesheet" href="style.css">
-  <title>Grafiel Imprenta | Mar del Plata</title>
+
+  <!-- JSON-LD: datos estructurados LocalBusiness (SEO local) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Grafiel Imprenta",
+    "description": "Imprenta en Mar del Plata especializada en impresión digital y offset. Folletos, tarjetas de visita, volantes, afiches y más.",
+    "url": "https://frann-rossi.github.io/grafiel/",
+    "telephone": "+5492236882574",
+    "email": "impresosgrafiel@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "San Martín 3495",
+      "addressLocality": "Mar del Plata",
+      "addressRegion": "Buenos Aires",
+      "postalCode": "B7600",
+      "addressCountry": "AR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -37.994869,
+      "longitude": -57.557929
+    },
+    "hasMap": "https://maps.google.com/?q=San+Martín+3495,+Mar+del+Plata,+Buenos+Aires",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "13:00"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+5492236882574",
+      "contactType": "customer service",
+      "availableLanguage": "Spanish"
+    }
+  }
+  </script>
 </head>
 
 <body>
 
-  <nav>
-    <div class="nav-inner">
-      <a class="brand" href="#"><i class="bi bi-printer-fill me-2"></i>Grafiel Imprenta</a>
-      <button class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Menú">
-        <i class="bi bi-list"></i>
-      </button>
-      <div class="nav-links">
-        <a href="#contacto">Contacto</a>
-        <a href="#horario">Horarios</a>
-        <a href="#ubicacion">Ubicación</a>
+  <header>
+    <nav aria-label="Navegación principal">
+      <div class="nav-inner">
+        <a class="brand" href="#" aria-label="Grafiel Imprenta – Inicio"><i class="bi bi-printer-fill me-2"></i>Grafiel Imprenta</a>
+        <button class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Abrir menú">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="nav-links">
+          <a href="#contacto">Contacto</a>
+          <a href="#horario">Horarios</a>
+          <a href="#ubicacion">Ubicación</a>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <section class="hero">
     <div class="hero-inner">
@@ -48,23 +124,23 @@
         <h2>Contacto</h2>
         <span class="ornament-line"></span>
       </div>
-      <div class="contact-grid">
-        <a href="tel:2236882574" class="contact-card phone">
-          <i class="bi bi-telephone-forward-fill"></i>
+      <address class="contact-grid">
+        <a href="tel:+5492236882574" class="contact-card phone" aria-label="Llamar al 223-688-2574">
+          <i class="bi bi-telephone-forward-fill" aria-hidden="true"></i>
           <span class="label">Teléfono</span>
           <span class="value">223-688-2574</span>
         </a>
-        <a href="https://wa.me/+5492236882574?text=Hola" target="_blank" rel="noopener noreferrer" class="contact-card whatsapp">
-          <i class="bi bi-whatsapp"></i>
+        <a href="https://wa.me/+5492236882574?text=Hola" target="_blank" rel="noopener noreferrer" class="contact-card whatsapp" aria-label="Escribir por WhatsApp al 223-688-2574">
+          <i class="bi bi-whatsapp" aria-hidden="true"></i>
           <span class="label">WhatsApp</span>
           <span class="value">223-688-2574</span>
         </a>
-        <a href="mailto:impresosgrafiel@gmail.com" class="contact-card email">
-          <i class="bi bi-envelope-fill"></i>
+        <a href="mailto:impresosgrafiel@gmail.com" class="contact-card email" aria-label="Enviar email a impresosgrafiel@gmail.com">
+          <i class="bi bi-envelope-fill" aria-hidden="true"></i>
           <span class="label">Email</span>
           <span class="value">impresosgrafiel@gmail.com</span>
         </a>
-      </div>
+      </address>
     </section>
 
     <div class="two-col">
@@ -101,6 +177,7 @@
         <p class="address"><i class="bi bi-pin-map-fill"></i> San Martín 3495, Mar del Plata</p>
         <div class="map-wrap">
           <iframe
+            title="Ubicación de Grafiel Imprenta en San Martín 3495, Mar del Plata"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.239688067607!2d-57.557929484397704!3d-37.994869379720036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584deaafc0149d3%3A0xa30045ed526ca5bf!2sSan%20Mart%C3%ADn%203495%2C%20B7600%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1678397728006!5m2!1ses-419!2sar"
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>
@@ -113,7 +190,10 @@
   <footer>
     <div class="ornament">&#11835; ✦ &#11835;</div>
     <p class="brand">Imprenta Grafiel</p>
-    <p class="copy">San Martín 3495, Mar del Plata &nbsp;&bull;&nbsp; <i class="bi bi-c-circle"></i> Todos los derechos reservados</p>
+    <address class="copy">
+      <a href="https://maps.google.com/?q=San+Martín+3495,+Mar+del+Plata" rel="noopener noreferrer" target="_blank" style="color:inherit;text-decoration:none;">San Martín 3495, Mar del Plata</a>
+      &nbsp;&bull;&nbsp; <i class="bi bi-c-circle" aria-hidden="true"></i> Todos los derechos reservados
+    </address>
   </footer>
 
   <script>
