@@ -382,3 +382,103 @@ footer .copy {
 }
 
 .blink { animation: blink 1.8s ease-in-out infinite; }
+
+/* ── SKIP LINK (accesibilidad) ───────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.75rem 1.5rem;
+  background: var(--ink);
+  color: var(--cream);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: 2px solid var(--gold);
+  border-top: none;
+  transition: top 0.15s;
+}
+.skip-link:focus { top: 0; outline: none; }
+
+/* ── VISUALLY HIDDEN ─────────────────── */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── FOCUS VISIBLE ───────────────────── */
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.contact-card:focus-visible {
+  outline-offset: 0;
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 0 var(--paper);
+}
+
+.btn-stamp:focus-visible {
+  background: var(--gold);
+  color: var(--ink);
+  outline-offset: 5px;
+}
+
+.nav-links a:focus-visible,
+.brand:focus-visible {
+  color: var(--gold-light);
+  outline-offset: 5px;
+}
+
+/* ── TABLE TH (horario semántico) ────── */
+.horario-table th {
+  padding: 0.7rem 0.25rem;
+  color: var(--ink-light);
+  font-weight: 400;
+  text-align: left;
+}
+
+.horario-table tr.cerrado th {
+  color: #9b1c1c;
+}
+
+/* ── CONTRASTE FOOTER (WCAG AA) ──────── */
+footer .copy { color: #a8987e; }
+
+/* ── REDUCED MOTION ──────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── FORCED COLORS / WINDOWS HIGH CONTRAST ── */
+@media (forced-colors: active) {
+  .btn-stamp,
+  .contact-card,
+  .badge-open,
+  .badge-closed {
+    forced-color-adjust: none;
+    border: 2px solid ButtonText;
+  }
+  .hero::before { display: none; }
+  .card-section { border: 1px solid ButtonText; }
+}
+
+/* ── PERFORMANCE: content-visibility ─── */
+.two-col {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 520px;
+}
