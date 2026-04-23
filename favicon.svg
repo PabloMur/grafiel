@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="5" fill="#1c1209"/>
+  <!-- Hoja superior (entrada) -->
+  <rect x="10" y="3" width="12" height="10" rx="1" fill="#d4b468"/>
+  <!-- Cuerpo de la impresora -->
+  <rect x="4" y="11" width="24" height="12" rx="2" fill="#b8912a"/>
+  <!-- Ranura de salida (papel blanco) -->
+  <rect x="10" y="18" width="12" height="11" rx="1" fill="#fdf8ef"/>
+  <!-- Luz indicadora -->
+  <circle cx="22" cy="16" r="2" fill="#1c1209"/>
+  <circle cx="22" cy="16" r="1" fill="#d4b468"/>
+</svg>
